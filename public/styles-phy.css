@@ -1,0 +1,189 @@
+/* Your existing CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Portland', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #3aafa9;
+}
+
+li {
+    list-style: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+.side-bar {
+    position: fixed;
+    background: #17252a;
+    width: 10vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Add margin to the top */
+    border-radius: 10px; /* Add rounded corners */
+    overflow-y: auto;
+}
+
+.side-bar li {
+    font-size: 15px;
+    padding: 15px 30px;
+    display: flex;
+    padding-top: 60px;
+}
+
+
+.side-bar li:hover {
+    background: #2b7a78;
+    color: #17252a;
+}
+
+/* Updated CSS for nav-bar */
+.nav-bar {
+    background: #17252a;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+
+}
+
+/* Updated CSS for the search input and button */
+.nav input[type="text"] {
+    border: 2px solid #2b7a78;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.nav button[type="submit"] {
+    background: transparent;
+    border: 2px solid #2b7a78;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #2b7a78;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px; /* Increase font size for the magnifying glass icon */
+}
+
+.nav-link {
+    color: #fff; /* Text color */
+    padding: 5px 10px; /* Add some padding for better appearance */
+    text-decoration: none; /* Remove the default link underline */
+    border: none; /* Remove any border */
+    cursor: pointer; /* Change the cursor to a pointer on hover to indicate it's clickable */
+}
+
+/* Center align the image within list items */
+.side-bar li img {
+    margin-right: 10px; /* Add some spacing between the image and text */
+}
+
+.side-bar ul li a {
+    text-decoration: none;
+}
+
+/* Style the layout to place text below the images */
+.side-bar ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    background-color: #2b7a78;
+    width: 82%;
+    height: 80%;
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 14%;
+
+
+}
+
+ /* Highlight the active list item */
+ .side-bar ul li.active {
+    background-color: #2b7a78; /* Background color for active item */
+}
+
+
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 40px; /* Adjust margin as needed for spacing */
+    font-size: 17px;
+
+}
+
+.nav-link img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+/* Your existing CSS */
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    .side-bar {
+        width: 100%;
+        min-height: auto;
+        position: static;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .side-bar li {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .nav-bar {
+        padding: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav button[type="submit"] {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .nav a {
+        margin-left: 0;
+    }
+
+    .container {
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+}
